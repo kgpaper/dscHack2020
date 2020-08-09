@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="{{url_for('static', filename='site.webmanifest')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='assets/img/favicon.ico')}}">
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="{{url_for('static', filename='assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/progressbar_barfiller.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/gijgo.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='assets/css/fontawesome-all.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='assets/css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/style.css')}}">
+    
+</head>
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="static/assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader end -->
+    <main>
+        <!-- Hero Area Start-->
+        <div class="slider-area">
+            <div class="single-slider slider-height d-flex align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-9">
+                            <!-- Hero Caption -->
+                            <div class="hero__caption">
+                                <a href = "/"><h1>감정 분석기</h1></a>
+                            </div>
+                            <!--Hero form -->
+                            <form method='POST' action="/" class="search-box">
+                                <div class="input-form">
+                                    <input type="text" name="word" placeholder="검색어를 입력하세요"></input>
+                                    <div class="search-form">
+                                        <button type="button" onclick="location.href='/res'"><i class="ti-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Hero Area End-->
+    </main>
+    <!-- JS here -->
+
+    <script src="./static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./static/assets/js/popper.min.js"></script>
+    <script src="./static/assets/js/bootstrap.min.js"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="./static/assets/js/jquery.counterup.min.js"></script>
+    <script src="./static/assets/js/waypoints.min.js"></script>
+    <script src="./static/assets/js/jquery.countdown.min.js"></script>
+    <script src="./static/assets/js/hover-direction-snake.min.js"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="./static/assets/js/plugins.js"></script>
+    <script src="./static/assets/js/main.js"></script>
+
+    </body>
+</html>
